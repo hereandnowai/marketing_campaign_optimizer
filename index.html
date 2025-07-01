@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HERE AND NOW AI - Marketing Suite</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link id="favicon" rel="icon" type="image/png" href="https://raw.githubusercontent.com/hereandnowai/images/refs/heads/main/favicon-logo-with-name.png">
+  <style>
+    body {
+      font-family: 'Inter', sans-serif; /* A common, clean sans-serif font */
+    }
+    /* Custom scrollbar for webkit browsers */
+    ::-webkit-scrollbar {
+      width: 8px;
+    }
+    ::-webkit-scrollbar-track {
+      background: #f1f1f1; /* Light mode track */
+    }
+    html.dark ::-webkit-scrollbar-track {
+      background: #2d3748; /* Dark mode track (gray-800) */
+    }
+    ::-webkit-scrollbar-thumb {
+      background: #004040; /* secondary color */
+      border-radius: 4px;
+    }
+    ::-webkit-scrollbar-thumb:hover {
+      background: #003030; /* darker secondary */
+    }
+    /* Ensure primary and secondary colors are available for Tailwind JIT */
+    .bg-primary { background-color: #FFDF00; }
+    .text-primary { color: #FFDF00; }
+    .border-primary { border-color: #FFDF00; }
+    .bg-secondary { background-color: #004040; }
+    .text-secondary { color: #004040; }
+    .border-secondary { border-color: #004040; }
+
+    /* Additional global styles for "super UI" */
+    .page-container {
+      max-width: 1200px;
+      margin-left: auto;
+      margin-right: auto;
+      padding-left: 1rem;
+      padding-right: 1rem;
+    }
+  </style>
+<script type="importmap">
+{
+  "imports": {
+    "react": "https://esm.sh/react@^19.1.0",
+    "react-dom/": "https://esm.sh/react-dom@^19.1.0/",
+    "react/": "https://esm.sh/react@^19.1.0/",
+    "@google/genai": "https://esm.sh/@google/genai@^1.5.1",
+    "html2canvas": "https://esm.sh/html2canvas@^1.4.1",
+    "jspdf": "https://esm.sh/jspdf@^3.0.1"
+  }
+}
+</script>
+<link rel="stylesheet" href="/index.css">
+</head>
+<body class="antialiased"> <!-- Default background/text colors will be set by App.tsx based on theme -->
+  <div id="root"></div>
+<script type="module" src="/index.tsx"></script>
+</body>
+</html>
